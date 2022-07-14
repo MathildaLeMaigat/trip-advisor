@@ -2,10 +2,12 @@
 
 body {
     font-family: "Trip Sans", sans-serif;
+   
   }
   
   button {
     font-family: inherit;
+   
   }
   
   input {
@@ -14,21 +16,28 @@ body {
   }
   
   .container {
-    width: 1136px;
+    max-width: 1136px;
     margin: 0 auto;
-    /* border: solid red 1px; */
+     /* border: solid red 1px;  */
   }
   
   h1 {
     font-size: 54px;
     font-weight: bold;
+   
   }
 
   h2{
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
-    color: black;
+   
 }
+
+h3{
+    font-size: 24px;
+    line-height: 40px;
+}
+
 
   
   /* HEADER */
@@ -77,9 +86,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 360px;
+    width: 380px;
   }
   
+.right-header span{
+    margin-left: 8px;
+    margin-right: 8px ;
+}
+
   .right-header button {
     width: 150px;
     height: 42px;
@@ -88,10 +102,6 @@ body {
     border: none;
     border-radius: 21px;
   }
-
-
-
-
 
 /* Main */
 
@@ -116,21 +126,18 @@ h1 span {
    
 }
 
-.menu-2 a{
-    text-decoration: none;
-    color: black;
-}
-
 .menu-2 article:not(:last-child){
     margin-right: 20px;
 }
 
 .menu-2 article:hover {
     background-color: black;
-    color: white;
+  color: white;
   }
 
-
+  .menu-2 p{
+    margin-right: 10px;
+  }
 /* Bloc Pictures */
 
 #bloc-picture{
@@ -139,11 +146,11 @@ h1 span {
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 .pictures img{
     display: flex;
-   
     height: 430px;
     width: 650px;
     object-fit: cover;
@@ -162,81 +169,192 @@ h1 span {
     margin-bottom: 2px;
   }
 
+/* - - - - - -  */
+
   .legende{
     font-size: 12px;
     color: grey;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-  }
-/*Under Bloc*/
-
-  #bloc-text{
-    margin-top: 30px;
-    /* border: red solid 2px; */
-    display: flex;
-  height: 360px;
-
-  }
-
-  /* #bloc-text div{
-    flex:1;
-} */
-
-.text{
-    /* border: green solid 2px; */
-    width: 800px;
-  display: flex;
-  flex-direction: column;
-box-sizing: border-box;
-  }
-
-.text p{
-    margin-top: 10px;
-}
-
-h3{
-    color: black;
-    font-weight: bold;
-    font-size: 25px;
-}
-.text-2 {
-/* border: red solid 2px; */
-display: flex;
-flex-direction: column;
-box-sizing: border-box;
-}
-
-.top{
-    background-color: #fe5d5d;
-    padding: 20px;
-    width: 430px;
-    height: 180px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.text-2 p{
-    font-size: 12px;
-    margin-top: 20px;
     margin-bottom: 20px;
-  
-    
-}
+  }
+/* Description */
 
-.text-2 button{
-    width: 150px;
-    height: 42px;
+ .middle-bloc{
+    /* border: 2px solid red; */
+    margin-bottom: 100px;
+    display: flex;
+ }
+
+ .middle-bloc .col-1{
+    /* background-color: #fe5d5d; */
+    height: 100%;
+    width: 50%;
+ }
+ .middle-bloc .col-2{
+    /* background-color: lightgreen; */
+    height: 100%;
+    width: calc(50% - 120px);
+    margin-left: 120px;
+
+ }
+
+ .middle-bloc .col-1 p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px
+ }
+
+ .middle-bloc .col-2 div:first-child{
+    background-color: #fe5d5d;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 234px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+ }
+
+ .middle-bloc .col-2 div:last-child{
+    background-image: url(../img/maps_cnuhsr.png);
+    height:190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px
+ }
+
+ .middle-bloc .col-2 p{
+    margin: 10px 0 20px 0;
+ }
+
+ .middle-bloc button {
+    width: 155px;
+    height: 55px;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 16px;
+    border-radius: 10px;
 }
-#bloc-text img{
-    height: 180px;
-    width: 470px;
-    object-fit: cover;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+ 
+/* PART 2 */
+
+.paris-container{
+    /* border: black 2px solid; */
+    height: 300px;
+    display: flex;
+    margin-top: 30px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
 }
 
+
+.description {
+    height: 100%;
+    width: 25%;
+    /* border: purple 2px solid; */
+    box-sizing: border-box;
+}
+
+.carousel{
+    height: 100%;
+    width: 75%;
+    /* border: blue 2px solid; */
+   display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* For Chrome */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.description p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 22px;
+    width: 90%;
+}
+
+.description button{
+margin-top: 20px;
+border: none;
+background-color: white;
+font-family: inherit;
+text-decoration: underline;
+padding: 0;
+}
+
+.carousel article {
+    height: 100%;
+  /* border: 2px solid green; */
+  width: calc(100% / 3 - 32px / 3 );
+  flex-shrink: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.carousel article:not(:last-child){
+    margin-right: 16px;
+}
+
+.carousel article > div:first-child{
+height: calc((100% / 3)*2);
+}
+
+.carousel article > div:first-child > img {
+height: 100%;
+width: 100%;
+} 
+
+.round{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel article > div:last-child i {
+    color: green;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 12px;
+    color: #9D9D9D;
+}
+
+/* Responsive Part */
+
+@media (max-width: 1184px) {
+    .menu-2{
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    .menu-2 article{
+        display: flex;
+      
+        height:42px;
+        width: 275px;
+        justify-content: center;
+        border: red 2px solid;
+        border-radius: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+       
+    }
+}
